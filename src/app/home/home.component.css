@@ -1,0 +1,62 @@
+.gallery {
+  padding: 70px 10px;
+}
+.gallery .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+}
+img {
+  max-width: 100%;
+  padding: 10px;
+}
+.box {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  background-color: aquamarine;
+  overflow: hidden;
+  height: fit-content;
+  padding: 10px;
+}
+
+.desc {
+  height: 0;
+  position: relative;
+  top: 100%;
+  transition: 0.3s;
+  overflow: hidden;
+}
+.desc.active {
+  padding: 10px;
+  height: 200px;
+  top: 0;
+}
+.thebtn {
+  width: 30%;
+  border: none;
+  background-color: black;
+  color: white;
+  padding: 5px 10px;
+  text-align: center;
+}
+.thebtn:hover {
+  color: black;
+  background-color: white;
+}
+.gallery .show {
+  text-align: center;
+}
+.gallery .show button {
+  text-align: center;
+  border: none;
+  padding: 10px 20px;
+  background-color: black;
+  color: white;
+  transition: 0.5s;
+  margin-top: 30px;
+}
+.gallery .show button:hover {
+  color: black;
+  background-color: white;
+}
