@@ -9,7 +9,7 @@ export class HomeComponent {
   // data: StoreData= new StoreData('iti','something else ' ,["html","css","js","typescript"]);
   stateoftheallshow = true;//they are closed
   ngAfterViewInit() {
-let state = true;
+    let state = true;
     let boxes = Array.from(document.getElementsByClassName('box'));
     let show =document.getElementById('show');
     let text = Array.from(document.getElementsByClassName('desc'));
